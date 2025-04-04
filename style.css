@@ -1,0 +1,61 @@
+ 
+        form{
+            border: 1px solid black;
+            /* height: 100%; */
+            margin: 10px;
+            padding: 10px;
+            padding-top: 2px;
+            
+        }
+        div{
+            height: 30px;
+            padding-bottom: 10px;
+        }
+        input:hover{
+            border-bottom: 2px solid rgb(83, 83, 99);
+        }
+        input{
+            border:none;
+            outline: none;
+            border-bottom: 1px solid black;
+
+        }
+        #Fline{
+            border: none;
+            border-bottom: 1px solid black;
+            width: 500px;
+            outline: none;
+        }
+        #sline{
+            border: none;
+            border-bottom: 1px solid black;
+            width: 484px;
+            outline: none;
+            
+        }
+        #Fline:hover{
+            border-bottom: 2px solid black;
+        }
+        #sline:hover{
+            border-bottom: 2px solid black;
+        }
+        .last{
+            padding-right: 10px;
+        }
+        select{
+            background-color: rgb(225, 225, 225);
+        }
+        select:hover{
+            background-color: white;
+            border: 2px solid black;
+        }
+        .hdiv{
+            display: flex;
+            align-content: center;
+            justify-content: left;
+            font-family: Georgia;
+            font-size: x-large;
+            height: 100%;
+        }
+        
+    

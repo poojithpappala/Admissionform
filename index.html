@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 
+        Application form
+    </title>
+    <link rel="icon" type="image/png" href="images/mvgr.png"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; height: 70px; background-color: rgb(229, 229, 222); ">
+        <div>
+            <img   src="https://www.careerguide.com/career/wp-content/uploads/2023/10/1670217276980.jpg" alt="Logo of MVGR" width="100px" height="80px" >
+        </div>
+        <div style="padding: 10px;">
+            <div class="hdiv" >
+                <header><b>MVGR Schools</b></header>
+                <br>
+            </div>
+            <div style="display:flex;justify-content: center; padding-bottom: 10px;">
+                <address>Vijayaram Nagar campus, Chintalavalasa, Vizianagaram, Andhra Pradesh 535005</address>
+            </div>
+        </div>
+    </div>
+    <div style="padding-left: 10px;">
+        <h1><b>Admission Form</b></h1>
+    </div>
+        <div>
+        <form id="admissionForm" onsubmit="return preventSubmit()"> <!- ADDED onsubmit HERE -->
+            <p><b>Student Details</b></p>
+            <br>
+            <div>
+                <label for="FName">First Name: </label>
+                <input id="FName" required placeholder="Enter Your First Name" type="text">
+            </div>
+            <div>
+                <label for="lName">Last Name: </label>
+                <input id="lName" placeholder="Enter Your Last Name" type="text">
+            </div>
+            <div>
+                <label for="dob">Date Of Birth: </label>
+                <input id="dob" type="date">
+            </div>
+            <div>
+                Gender: <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">female</label>
+                        </div>
+            <hr>
+            <b>Parents details:</b>
+            <br>
+            <br>
+            <div>
+                <label for="faname">Father's Name: </label>
+                <input id="faname" type="text" required placeholder="Enter full name">
+            </div>
+            <div>
+                <label for="focc">Occupation: </label>
+                <input id="focc" type="text" required placeholder="Current Occupation">
+            </div>
+            <div>
+                <label for="fnum">Phone Number: </label>
+                <span>+91</span>
+                <input type="tel" id="fnum"  minlength="10" required placeholder="Phone Number" >
+            </div>
+            <div>
+                <label for="femail">Email: </label>
+                <input type="email" id="femail" required placeholder="Email address">
+            </div>
+            <br>
+            <div>
+                <label for="maname">Mother's Name: </label>
+                <input id="maname" type="text" required placeholder="Enter full name">
+            </div>
+            <div>
+                <label for="mocc">Occupation: </label>
+                <input id="mocc" type="text" required placeholder="Current Occupation">
+            </div>
+            <div>
+                <label for="mnum">Phone Number: </label>
+                <span>+91</span>
+                <input type="tel" id="mnum"  minlength="10" required placeholder="Phone Number" >
+            </div>
+            <hr>
+            <br>
+            <h3><b>Address</b></h3>
+            <br>
+            <br>
+            <div>
+                <label for="Hno">Door Number: </label>
+                <input id="Hno" required placeholder="Enter Your Door No." type="text">
+            </div>
+            <div style="padding-bottom: 10px;">
+                <label for="Fline">First line: </label>
+                <input id="Fline" required type="text">
+            </div>
+            <div>
+                <label for="sline">Second line: </label>
+                <input id="sline" type="text">
+            </div>
+        <div style="display: flex; ">
+            <div class="last">
+                <label for="city">City: </label>
+                <select id="city" name="city">
+                    <option value="">Select City</option>
+                    <option value="Amaravati">Amaravati</option>
+                    <option value="Anakapalle">Anakapalle</option>
+                    <option value="Anantapur">Anantapur</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="Chittoor">Chittoor</option>
+                    <option value="Eluru">Eluru</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="Kadapa">Kadapa</option>
+                    <option value="Kakinada">Kakinada</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Machilipatnam">Machilipatnam</option>
+                    <option value="Mangalagiri">Mangalagiri</option>
+                    <option value="Nandyal">Nandyal</option>
+                    <option value="Narasaraopet">Narasaraopet</option>
+                    <option value="Nellore">Nellore</option>
+                    <option value="Ongole">Ongole</option>
+                    <option value="Proddatur">Proddatur</option>
+                    <option value="Rajamahendravaram">Rajamahendravaram</option>
+                    <option value="Srikakulam">Srikakulam</option>
+                    <option value="Tadepalligudem">Tadepalligudem</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Tenali">Tenali</option>
+                    <option value="Vijayawada">Vijayawada</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                </select>
+
+            </div>
+            <div class="last">
+                <label for="district">District: </label>
+                <select id="district" name="district">
+                    <option value="">Select District</option>
+                    <option value="Anakapalli">Anakapalli</option>
+                    <option value="Ananthapuram">Ananthapuram</option>
+                    <option value="Annamayya">Annamayya</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="Chittoor">Chittoor</option>
+                    <option value="East Godavari">East Godavari</option>
+                    <option value="Eluru">Eluru</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="Kakinada">Kakinada</option>
+                    <option value="Konaseema">Konaseema</option>
+                    <option value="Krishna">Krishna</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Nandyal">Nandyal</option>
+                    <option value="Nellore">Nellore</option>
+                    <option value="Palnadu">Palnadu</option>
+                    <option value="Parvathipuram Manyam">Parvathipuram Manyam</option>
+                    <option value="Prakasam">Prakasam</option>
+                    <option value="Sri Potti Sriramulu Nellore">Sri Potti Sriramulu Nellore</option>
+                    <option value="Srikakulam">Srikakulam</option>
+                    <option value="Tirupati">Tirupati</option>
+                    <option value="Visakhapatnam">Visakhapatnam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                    <option value="West Godavari">West Godavari</option>
+                    <option value="YSR Kadapa">YSR Kadapa</option>
+                </select>
+            </div>
+            <div class="last">
+                <label for="State">State/UT: </label>
+                <select style="width: 200px;" id="state" name="state">
+                    <option value="">Select State/UT</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                </select>
+
+            </div>
+        </div>
+        <br>
+            <div style="display: flex;align-content: center; justify-content: center;">
+                <input   type="submit"> <!- THIS IS THE PROBLEM BUTTON -->
+            </div>
+            <div style="display: flex;align-content: center; justify-content: center;">
+                <button type="button" onclick="showReview()">Review Details</button>
+            </div>
+
+        </form>
+
+        <div id="reviewSection" style="display: none; border: 1px solid #ccc; padding: 20px; margin-top: 20px;">
+            <h2>Review Your Application Details</h2>
+            <p><strong>Student Name:</strong> <span id="reviewFName"></span> <span id="reviewLName"></span></p>
+            <p><strong>Date of Birth:</strong> <span id="reviewDob"></span></p>
+            <p><strong>Gender:</strong> <span id="reviewGender"></span></p>
+            <hr>
+            <p><strong>Father's Name:</strong> <span id="reviewFaName"></span></p>
+            <p><strong>Father's Occupation:</strong> <span id="reviewFOcc"></span></p>
+            <p><strong>Father's Phone:</strong> +91 <span id="reviewFNum"></span></p>
+            <p><strong>Father's Email:</strong> <span id="reviewFEmail"></span></p>
+            <p><strong>Mother's Name:</strong> <span id="reviewMaName"></span></p>
+            <p><strong>Mother's Occupation:</strong> <span id="reviewMOcc"></span></p>
+            <p><strong>Mother's Phone:</strong> +91 <span id="reviewMNum"></span></p>
+            <hr>
+            <p><strong>Address:</strong> <span id="reviewHno"></span>, <span id="reviewFline"></span>, <span id="reviewSline"></span>, <span id="reviewCity"></span>, <span id="reviewDistrict"></span>, <span id="reviewState"></span></p>
+            <br>
+            <button type="button" onclick="goBackToEdit()">Edit Details</button>
+            <button type="button" onclick="submitApplication()">Confirm and Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function preventSubmit() {
+            // This function will stop the default form submission
+            return false;
+        }
+
+        function showReview() {
+            // Get student details
+            document.getElementById("reviewFName").textContent = document.getElementById("FName").value;
+            document.getElementById("reviewLName").textContent = document.getElementById("lName").value;
+            document.getElementById("reviewDob").textContent = document.getElementById("dob").value;
+            let gender = document.querySelector('input[name="gender"]:checked');
+            document.getElementById("reviewGender").textContent = gender ? gender.value : "Not Selected";
+
+            // Get parents details (Father)
+            document.getElementById("reviewFaName").textContent = document.getElementById("faname").value;
+            document.getElementById("reviewFOcc").textContent = document.getElementById("focc").value;
+            document.getElementById("reviewFNum").textContent = document.getElementById("fnum").value;
+            document.getElementById("reviewFEmail").textContent = document.getElementById("femail").value;
+
+            // Get parents details (Mother)
+            document.getElementById("reviewMaName").textContent = document.getElementById("maname").value;
+            document.getElementById("reviewMOcc").textContent = document.getElementById("mocc").value;
+            document.getElementById("reviewMNum").textContent = document.getElementById("mnum").value;
+
+            // Get address details
+            document.getElementById("reviewHno").textContent = document.getElementById("Hno").value;
+            document.getElementById("reviewFline").textContent = document.getElementById("Fline").value;
+            document.getElementById("reviewSline").textContent = document.getElementById("sline").value;
+            document.getElementById("reviewCity").textContent = document.getElementById("city").value;
+            document.getElementById("reviewDistrict").textContent = document.getElementById("district").value;
+            document.getElementById("reviewState").textContent = document.getElementById("state").value;
+
+            // Hide the form and show the review section
+            document.getElementById("admissionForm").style.display = "none";
+            document.getElementById("reviewSection").style.display = "block";
+        }
+
+        function goBackToEdit() {
+            // Show the form and hide the review section
+            document.getElementById("admissionForm").style.display = "block";
+            document.getElementById("reviewSection").style.display = "none";
+        }
+
+        function submitApplication() {
+            // In a real application, this is where you would send the data to the server.
+            alert("Your application has been submitted!");
+            // You might want to add code here to clear the form or redirect the user.
+        }
+    </script>
+</div>
+</body>
+</html>
